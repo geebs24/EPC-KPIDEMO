@@ -1,0 +1,57 @@
+# Getting Started with the Dashboard
+
+## Steps to Deploy the Dashboard
+
+1. **Upload to GitHub**
+   - Create a new repository on GitHub
+   - Upload all these files maintaining the directory structure
+   - The top level should have: public folder, src folder, package.json, README.md
+
+2. **Deploy with Vercel (Recommended)**
+   - Go to [Vercel](https://vercel.com/)
+   - Sign up with your GitHub account
+   - Click "New Project"
+   - Import your GitHub repository
+   - Click "Deploy" (no configuration needed)
+   - You'll get a URL to share with your client
+
+3. **Alternate: Deploy with Netlify**
+   - Go to [Netlify](https://www.netlify.com/)
+   - Sign up with your GitHub account
+   - Click "New site from Git"
+   - Choose GitHub and select your repository
+   - Click "Deploy site"
+
+## File Structure Explanation
+
+```
+eastport-dashboard/
+├── README.md                 # Project documentation
+├── package.json              # Dependencies and scripts
+├── public/                   # Static assets
+│   ├── index.html            # HTML template
+│   └── manifest.json         # Web app manifest
+└── src/                      # Source code
+    ├── App.js                # Main App component
+    ├── App.css               # App-specific styles
+    ├── Dashboard.jsx         # The dashboard component
+    ├── index.js              # Application entry point
+    ├── index.css             # Global styles
+    └── reportWebVitals.js    # Performance monitoring
+```
+
+## Customization Options
+
+- To modify any data in the dashboard, edit the data arrays in the Dashboard.jsx file
+- To change colors or styling, modify the CSS classes in the Dashboard.jsx file
+- To add new features, extend the Dashboard.jsx component
+
+## Client Presentation Tips
+
+1. Share the deployed URL with your client
+2. Schedule a video call to walk them through the features
+3. Emphasize how this dashboard will help them track critical business metrics
+4. Point out the sales spike detection and low inventory alerts as key features
+5. Explain how this is just one component of your Premium Partnership offering
+
+If you need any additional help, feel free to ask!

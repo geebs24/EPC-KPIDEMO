@@ -1,0 +1,46 @@
+.App {
+  text-align: center;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Ensures the dashboard fills the full width */
+.App > div {
+  width: 100%;
+}
+
+/* Basic tailwind-like utilities for spacing */
+.p-4 {
+  padding: 1rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  
+  .md\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+}
